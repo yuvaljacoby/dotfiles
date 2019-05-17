@@ -1,5 +1,5 @@
 " map leader to space
-let mapleader = "\<Space>"
+" let mapleader = "\<Space>"
 
 call plug#begin('~/.vim/plugged')
 

@@ -1,6 +1,6 @@
 [user]
 	email = yuval999@gmail.com
-	name = Yuval Jacoby
+	name = Yuval Jacoby 
 [alias]
 	lol = log --oneline --graph --decorate
 [core]
