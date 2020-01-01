@@ -15,6 +15,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'chriskempson/base16-vim'
 Plug 'rust-lang/rust.vim'
 Plug 'machakann/vim-highlightedyank'
+Plug 'vim-latex/vim-latex'
 if has('nvim') 
     Plug 'autozimu/LanguageClient-neovim', {
                 \ 'branch': 'next',
@@ -101,7 +102,7 @@ end
 
 " git grep command
 nnoremap <C-F> :Ggr <cword><CR>
-command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
+" command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
 
 set colorcolumn=80
 
@@ -153,3 +154,6 @@ nnoremap <right> :bn<CR>
 set spell
 
 let g:airline_powerline_fonts = 1
+
+set ignorecase
+set smartcase
