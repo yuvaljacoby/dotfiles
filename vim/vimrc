@@ -1,5 +1,5 @@
 " map leader to space
-" let mapleader = "\<Space>"
+let mapleader = "\<Space>"
 
 call plug#begin('~/.vim/plugged')
 
@@ -7,25 +7,25 @@ Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
-Plug 'fatih/vim-go'
+" Plug 'fatih/vim-go'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'chriskempson/base16-vim'
 Plug 'rust-lang/rust.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'vim-latex/vim-latex'
-if has('nvim') 
-    Plug 'autozimu/LanguageClient-neovim', {
-                \ 'branch': 'next',
-                \ 'do': 'bash install.sh' }
-    Plug 'roxma/nvim-completion-manager'
-    " Plug 'roxma/nvim-cm-racer'
-    Plug 'Shougo/echodoc.vim'
-else
-    Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
-end
+" if has('nvim') 
+"     Plug 'autozimu/LanguageClient-neovim', {
+"                 \ 'branch': 'next',
+"                 \ 'do': 'bash install.sh' }
+"     Plug 'roxma/nvim-completion-manager'
+"     " Plug 'roxma/nvim-cm-racer'
+"     Plug 'Shougo/echodoc.vim'
+" else
+"     Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+" end
 
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
@@ -106,7 +106,7 @@ nnoremap <C-F> :Ggr <cword><CR>
 
 set colorcolumn=80
 
-" Ctrl+j as Esc
+" " Ctrl+j as Esc
 vnoremap <C-j> <Esc>
 inoremap <C-j> <Esc>
 nnoremap <C-j> <Esc>
@@ -141,7 +141,7 @@ let g:rustfmt_fail_silently = 1
 au Filetype rust set colorcolumn=100
 
 " vim-go config
-let g:go_fmt_command = "goimports"
+" let g:go_fmt_command = "goimports"
 
 " enforce purity
 nnoremap <up> <nop>
@@ -157,3 +157,5 @@ let g:airline_powerline_fonts = 1
 
 set ignorecase
 set smartcase
+hi Visual  guifg=#000000 guibg=#FFFFFF gui=none
+

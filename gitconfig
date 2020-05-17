@@ -5,3 +5,5 @@
 	lol = log --oneline --graph --decorate
 [core]
 	editor = vim
+[push]
+	default = simple
