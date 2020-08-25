@@ -33,6 +33,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
 Plug 'stephpy/vim-yaml'
 
+Plug 'zxqfl/tabnine-vim'
+
 call plug#end()
 
 filetype plugin indent on
@@ -159,3 +161,6 @@ set ignorecase
 set smartcase
 hi Visual  guifg=#000000 guibg=#FFFFFF gui=none
 
+" set folding by syntax, default open
+set foldmethod=syntax
+set foldlevel=99
