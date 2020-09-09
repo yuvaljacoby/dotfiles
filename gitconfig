@@ -6,4 +6,10 @@
 [core]
 	editor = vim
 [push]
-	default = simple
+	default = current
+[grep]
+	lineNumber = true
+[credential]
+	helper = cache
+
+
