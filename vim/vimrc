@@ -11,9 +11,11 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 " Plug 'fatih/vim-go'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'chriskempson/base16-vim'
 Plug 'rust-lang/rust.vim'
+Plug 'keith/swift.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'vim-latex/vim-latex'
 " if has('nvim') 
@@ -32,8 +34,9 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'mileszs/ack.vim'
 Plug 'stephpy/vim-yaml'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 
-Plug 'zxqfl/tabnine-vim'
 
 call plug#end()
 
@@ -155,8 +158,6 @@ nnoremap <right> :bn<CR>
 
 set spell
 
-let g:airline_powerline_fonts = 1
-
 set ignorecase
 set smartcase
 hi Visual  guifg=#000000 guibg=#FFFFFF gui=none
@@ -164,3 +165,33 @@ hi Visual  guifg=#000000 guibg=#FFFFFF gui=none
 " set folding by syntax, default open
 set foldmethod=syntax
 set foldlevel=99
+
+
+
+" let g:loaded_airline = 1
+let g:airline_powerline_fonts = 1
+let g:airline_detect_spell=0
+let g:airline_theme='violet'
+" Not showing ale on statusline
+let g:airline#extensions#ale#enabled = 0
+let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+let g:airline_mode_map = {
+  \ '__'     : '-',
+  \ 'c'      : 'C',
+  \ 'i'      : 'I',
+  \ 'ic'     : 'I',
+  \ 'ix'     : 'I',
+  \ 'n'      : 'N',
+  \ 'multi'  : 'M',
+  \ 'ni'     : 'N',
+  \ 'no'     : 'N',
+  \ 'R'      : 'R',
+  \ 'Rv'     : 'R',
+  \ 's'      : 'S',
+  \ 'S'      : 'S',
+  \ ''     : 'S',
+  \ 't'      : 'T',
+  \ 'v'      : 'V',
+  \ 'V'      : 'V',
+  \ ''     : 'V',
+  \ }
