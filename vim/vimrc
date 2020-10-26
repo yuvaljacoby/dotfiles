@@ -168,8 +168,12 @@ set foldlevel=99
 
 
 
+" YCM - You Complete Me
+let g:ycm_semantic_triggers = { 'c++': [ 're!.' ] }
+let g:ycm_confirm_extra_conf = 0
+
+" AIRLINE
 " let g:loaded_airline = 1
-let g:airline_powerline_fonts = 1
 let g:airline_detect_spell=0
 let g:airline_theme='violet'
 " Not showing ale on statusline
@@ -195,3 +199,5 @@ let g:airline_mode_map = {
   \ 'V'      : 'V',
   \ ''     : 'V',
   \ }
+let g:airline_powerline_fonts = 1
+autocmd BufNewFile,BufRead Jenkinsfile set syntax=groovy
