@@ -34,8 +34,9 @@
     ~/.vim: vim/
     ~/.tmux.conf: tmux/tmux.conf
     ~/.gitconfig: gitconfig
-    ~/.zshrc: zsh/zshrc
-    ~/.zshenv: zsh/zshenv
+    # ~/.zshrc: zsh/zshrc
+    # ~/.zshenv: zsh/zshenv
+    ~/.bashrc: bash/bashrc
 
 - shell:
   - 
