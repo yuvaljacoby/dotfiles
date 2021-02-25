@@ -38,6 +38,8 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 
 
+Plug 'aserebryakov/vim-todo-lists'
+
 call plug#end()
 
 filetype plugin indent on
